@@ -1,0 +1,78 @@
+/* Generics */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Utilities */
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.black-button {
+    background-color: black;
+    color: white
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px auto;
+}
+
+.logo-discord img {
+    height: 100px;
+}
+
+/* Contenuto */
+
+header {
+    background-color: #285de6;
+    color: white;
+}
+
+nav {
+    width: calc(100% /3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-sec {
+    line-height: 75px;
+    text-align: center;
+    color: white;
+    min-height: 500px;
+    background-image: url('../img/backg-discord.png');
+}
+
+.first-cont {
+    padding: 50px 0;
+}
+
+.first-cont h2 {
+    margin-bottom: 25px;
+}
