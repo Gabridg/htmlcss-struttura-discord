@@ -5,6 +5,7 @@
 }
 
 body {
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,6 +22,17 @@ body {
     align-items: center;
 }
 
+.flex-box-rx {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.flex-box-sx {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 
 .black-button {
     background-color: black;
@@ -33,12 +45,11 @@ ul {
 
 h2 {
     font-size: 60px;
+    margin-bottom: 30px;
 }
 
 p {
-    font-weight: bold;
     font-size: 20px;
-    margin: 5px auto;
 }
 
 .logo-discord img {
@@ -61,7 +72,8 @@ a {
     color: white;
 }
 
-.first-sec {
+/*sezione header*/
+.header-sec {
     line-height: 75px;
     text-align: center;
     color: white;
@@ -69,10 +81,34 @@ a {
     background-image: url('../img/backg-discord.png');
 }
 
-.first-cont {
+.header-cont {
     padding: 50px 0;
 }
 
-.first-cont h2 {
+.header-cont h2 {
     margin-bottom: 25px;
+}
+
+/* prima sezione */
+
+.first-section {
+    border-bottom: 2px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.flex-box-rx img {
+    margin-right: 30px;
+}
+
+.column {
+    padding: 50px;
+    width: calc(100% / 2);
+}
+
+/* seconda sezione */
+
+.second-section {
+    padding: 50px;
+    background-color: rgb(202, 202, 202);
 }
