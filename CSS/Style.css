@@ -29,7 +29,7 @@ body {
 
 .flex-box-sx {
     display: flex;
-    align-items: center;
+    align-items: top;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
@@ -123,4 +123,50 @@ a {
 
 .central-column {
     text-align: center;
+}
+
+.column-vertical {
+    text-align: center;
+    margin: 90px;
+}
+
+/* footer */
+
+footer {
+    min-height: 400px;
+    background-color: #23272a;
+}
+
+.flexbox-footer {
+    padding-top: 50px;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+}
+
+.column-footer h3 {
+    font-size: 40px;
+    color: #7289da;
+}
+
+.column-footer ul li {
+    display: inline-block;
+    width: 35px;
+}
+
+h4 {
+    color: #7289da
+}
+
+a {
+    padding: 10px 0;
+    display: block;
+}
+
+.starter {
+    width: calc(100%/5*2);
+}
+
+#register {
+    background-color: #7289da;
 }
