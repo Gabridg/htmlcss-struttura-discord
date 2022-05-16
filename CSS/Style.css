@@ -25,13 +25,19 @@ body {
 .flex-box-rx {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .flex-box-sx {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.flex-box-dw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .black-button {
@@ -92,6 +98,7 @@ a {
 /* prima sezione */
 
 .first-section {
+    background-color: #fff;
     border-bottom: 2px;
     text-align: left;
     margin-top: 50px;
@@ -102,8 +109,7 @@ a {
 }
 
 .column {
-    padding: 50px;
-    width: calc(100% / 2);
+    margin: 90px;
 }
 
 /* seconda sezione */
@@ -111,4 +117,10 @@ a {
 .second-section {
     padding: 50px;
     background-color: rgb(202, 202, 202);
+}
+
+/* terza sezione */
+
+.central-column {
+    text-align: center;
 }
