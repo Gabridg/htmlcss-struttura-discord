@@ -1,172 +1,133 @@
-/* Generics */
+/* General */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
+
+section {
+    padding: 50px;
+}
+
+
+/* Utilities */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Utilities */
-
-.flex-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-box-rx {
-    display: flex;
-    align-items: center;
-}
-
-.flex-box-sx {
-    display: flex;
-    align-items: top;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.flex-box-dw {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.black-button {
-    background-color: black;
-    color: white
-}
-
-ul {
-    list-style-type: none;
-}
-
-h2 {
-    font-size: 60px;
-    margin-bottom: 30px;
-}
-
-p {
-    font-size: 20px;
-}
-
-.logo-discord img {
-    height: 100px;
-}
-
-/* Contenuto */
+/* Header */
 
 header {
-    background-color: #285de6;
-    color: white;
+    min-height: 80px;
+    background-color: lightseagreen;
 }
 
-nav {
-    width: calc(100% /3);
+.navbar {
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.navbar>div {
+    background-color: dodgerblue;
 }
 
-/*sezione header*/
+/* header section */
+
 .header-sec {
-    line-height: 75px;
-    text-align: center;
-    color: white;
-    min-height: 500px;
-    background-image: url('../img/backg-discord.png');
+    background-color: darkblue;
+    height: 500px;
 }
 
-.header-cont {
+.header-sec .content-sec {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+/* Main */
+
+.sec-container {
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.odd-sec {
+    background-color: #fff;
+}
+
+.even-sec {
+    background-color: grey;
+}
+
+.big-col {
+    height: 500px;
+    flex-basis: 60%;
+    background-color: darkgoldenrod;
+}
+
+.small-col {
+    flex-basis: 40%;
+    background-color: blueviolet;
+}
+
+.vertical-col {
+    flex-basis: 100%;
+    background-color: lime;
+    height: 500px;
+}
+
+/* Footer */
+
+footer {
+    background-color: darkslategrey;
     padding: 50px 0;
 }
 
-.header-cont h2 {
-    margin-bottom: 25px;
-}
-
-/* prima sezione */
-
-.first-section {
-    background-color: #fff;
-    border-bottom: 2px;
-    text-align: left;
-    margin-top: 50px;
-}
-
-.flex-box-rx img {
-    margin-right: 30px;
-}
-
-.column {
-    margin: 90px;
-}
-
-/* seconda sezione */
-
-.second-section {
-    padding: 50px;
-    background-color: rgb(202, 202, 202);
-}
-
-/* terza sezione */
-
-.central-column {
-    text-align: center;
-}
-
-.column-vertical {
-    text-align: center;
-    margin: 90px;
-}
-
-/* footer */
-
-footer {
-    min-height: 400px;
-    background-color: #23272a;
-}
-
-.flexbox-footer {
-    padding-top: 50px;
+footer .footer-main {
+    height: 500px;
+    padding-bottom: 25px;
     display: flex;
-    align-items: top;
-    justify-content: space-evenly;
 }
 
-.column-footer h3 {
-    font-size: 40px;
-    color: #7289da;
+.column-lang {
+    width: calc(100% / 5*2);
+    height: 300px;
+    background-color: red;
 }
 
-.column-footer ul li {
-    display: inline-block;
-    width: 35px;
+.column-menu {
+    width: calc(100%/5);
+    height: 400px;
+    background-color: yellow;
 }
 
-h4 {
-    color: #7289da
+.footer-bottom {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
 }
 
-a {
-    padding: 10px 0;
-    display: block;
+.logo {
+    height: 100px;
+    width: 50%;
+    background-color: deeppink;
 }
 
-.starter {
-    width: calc(100%/5*2);
-}
-
-#register {
-    background-color: #7289da;
+.button {
+    height: 100px;
+    width: 50%;
+    background-color: lightsalmon;
 }
